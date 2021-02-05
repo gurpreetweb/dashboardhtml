@@ -1,0 +1,192 @@
+//============
+// Page - account layout
+//============
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+.fullheight {
+    height: 100%;
+}
+
+.account-layout-wrapper {
+    .account-left-menubar {
+        background-color: #f1f1f1;
+        border: 1px solid #E2E2E2;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: -20px;
+        padding-top: 75px;
+        min-height: 750px;
+        .list-group {
+            padding-left: 25px;
+            padding-right: 20px;
+            a {
+                background: transparent;
+                border-bottom: 1px solid #E2E2E2;
+                color: #9490A4;
+                font-size: 15px;
+                border-top: none;
+                margin-top: 0px;
+                span {
+                    padding-right: 12px;
+                    width: 25px;
+                    display: inline-block;
+                }
+                &:last-child {
+                    border-bottom: none!important;
+                }
+            }
+            .list-group-item {
+                &.active {
+                    border-color: #E2E2E2!important;
+                    color: #02000A;
+                    span i {
+                        color: #3E2ABE;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        padding-left: 25px;
+    }
+    .account-top-heading {
+        margin-top: 15px;
+        padding-left: 0px;
+        .dasevent-table-heading {
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            h2 {
+                font-size: 22px;
+                color: #02000A;
+                padding-top: 15px;
+            }
+            .account-btn {
+                .save-changes {
+                    @include btnlayout;
+                }
+                .cancle-subscription {
+                    background: #E6E6E6;
+                    color: #9490A4;
+                    font-size: 16px;
+                    font-weight: 500;
+                    border: 1px solid #E6E6E6;
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+    .tab-pane {
+        .profile_account {
+            background: $whitecolor;
+            padding: 30px 30px 60px 30px;
+            border-radius: 10px;
+            .card-body {
+                .account-edit-img {
+                    position: relative;
+                    .account-edit-icon {
+                        position: absolute;
+                        bottom: -2px;
+                        right: -2px;
+                    }
+                }
+                .media-body {
+                    margin-left: 15px!important;
+                    h5 {
+                        color: #02000A;
+                        font-size: 16px;
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                    span {
+                        color: #7B7B82;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .account-profile-form {
+                label {
+                    color: #9490A4;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                input {
+                    background: #FAFAFA;
+                    border: 1px solid #EBEBEB;
+                    font-size: 16px;
+                    color: #3F3E43;
+                    height: 55px;
+                    border-radius: 10px;
+                }
+                .form-group {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .account-profile-subscription {
+        h3 {
+            color: #9490A4;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        .subscription-price {
+            h1 {
+                .doller {
+                    font-size: 30px;
+                    color: #242F40;
+                }
+                .mo {
+                    font-size: 17px;
+                    color: #5B6B82;
+                }
+                .price {
+                    color: #242F40;
+                    font-size: 75px;
+                }
+            }
+        }
+        .subscription-btn {
+            text-align: center;
+            margin-top: 45px;
+            .change-plan {
+                border: 1px solid #5B33F1;
+                color: #5B33F1;
+                background: #ffffff;
+                font-size: 16px;
+                width: 150px;
+                padding: 12px;
+                margin-right: 10px;
+            }
+            .change-option {
+                background: #5B33F1;
+                color: #EDE83A;
+                font-size: 16px;
+                border: 1px solid #5B33F1;
+                width: 182px;
+                padding: 12px;
+            }
+        }
+        .account-billing-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .account-billing-text {
+                h5 {
+                    color: #9490A4;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: left;
+                    span {
+                        color: #02000A;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script src="node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-r-0 p-l-0">
+                    <!-- #Left Sidebar ==================== -->
+                    <div class="sidebar">
+                        <div class="sidebar-inner">
+                            <!-- ### $Sidebar Header ### -->
+                            <div class="sidebar-logo">
+                                <div class="peers ai-c fxw-nw">
+                                    <div class="peer peer-greed">
+                                        <a class="sidebar-link td-n" href="index.html">
+                                            <div class="peers ai-c fxw-nw">
+                                                <div class="peer">
+                                                    <div class="logo">
+                                                        <img src="img/logo.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- ### $Sidebar Menu ### -->
+                            <ul class="sidebar-menu">
+                                <li class="nav-item actived">
+                                    <a class="sidebar-link" href="dashboard.html">
+                                        <span class="icon-holder">
+                                        <img src="img/dashboard-icon.png">
+                                    </span>
+                                        <span class="title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link active' href="events.html">
+                                        <span class="icon-holder">
+                                    <img src="img/events-icon.png">
+                                    </span>
+                                        <span class="title">Events</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="integrations.html">
+                                        <span class="icon-holder">
+                                    <img src="img/integration-icon.png">
+                                    </span>
+                                        <span class="title">Integrations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="account.html">
+                                        <span class="icon-holder">
+                                    <img src="img/account-icon.png">
+                                    </span>
+                                        <span class="title">Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="upgrade.html">
+                                        <span class="icon-holder">
+                                        <img src="img/upgrade-icon.png">
+                                    </span>
+                                        <span class="title">Upgrade</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changebackground.html">
+                                        <span class="icon-holder">
+                                        <img src="img/change-background-icon.png">
+                                    </span>
+                                        <span class="title">Change Background </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changelog.html">
+                                        <span class="icon-holder">
+                                        <img src="img/change-log-icon.png">
+                                    </span>
+                                        <span class="title">Change Log</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="sidebar-link" href="helpsupport.html">
+                                        <span class="icon-holder">
+                                        <img src="img/helpsupport-icon.png">
+                                    </span>
+                                        <span class="title">Help & Support</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- #Main ============================ -->
+                    <div class="page-container">
+                        <!-- ### $Topbar ### -->
+                        <div class="header navbar">
+                            <div class="header-container">
+                                <ul class="nav-left">
+                                    <h2>Events</h2>
+                                </ul>
+                                <ul class="nav-right">
+                                    <li class="notifications">
+
+                                        <a href="#">
+                                            <img src="img/notification-icon.png">
+                                        </a>
+                                    </li>
+                                    <li class="profile_box">
+                                        <a href="#">
+                                            <div class="mR-10">
+                                                <img class="bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                                            </div>
+                                            <div class="profile-name">
+                                                <span>
+                                            <span class="fw-500">John Doe</span>
+                                                <span class="username">user</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ### $App Screen Content ### -->
+                        <main class='main-content mT-20 pb-50'>
+                            <div id='mainContent'>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 p-r-0 p-l-0">
+                                        <div class="row">
+                                            <div class="dashboard-event-box-wrapper full-width">
+                                                <div class="col-md-12">
+                                                    <!-- #event Report ==================== -->
+
+                                                    <div class="event-dashboard-wrapper events_layout_wrapper">
+                                                        <div class="dasevent-table-heading">
+
+                                                            <div class="event-btn float-right">
+                                                                <a href="#" class="btn btn-primary new-event" data-toggle="modal" data-target="#eventssettinglayout">Event Setting</a>
+                                                                <a href="#" class="btn btn-primary new-event" data-toggle="modal" data-target="#createneweventslayout">+ New Event</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event-table-box">
+
+                                                            <div class="table-responsive p-20">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class=" bdwT-0">Name</th>
+                                                                            <th class=" bdwT-0 text-center">Photos</th>
+                                                                            <th class=" bdwT-0 text-center">Email</th>
+                                                                            <th class=" bdwT-0 text-center">Facebook</th>
+                                                                            <th class=" bdwT-0 text-center">Twitter</th>
+                                                                            <th class=" bdwT-0 text-center">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-right"><span class="events-actions-icon">
+                                                                            <a href="#"><img src="img/action-mail-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-share-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-edit-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-copy-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-pause-icon.png"></a>
+                                                                            <a href="#"><img src="img/action-remove-icon.png"></a>
+                                                                        </span></td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="events-pagination-box">
+                                                                    <nav>
+                                                                        <ul class="pagination justify-content-end">
+                                                                            <li class="page-item disabled">
+                                                                                <span class="page-link prev">Prev</span>
+                                                                            </li>
+
+                                                                            <li class="page-item active">
+                                                                                <span class="page-link">
+                                                                            1
+                                                                            <span class="sr-only">(current)</span>
+                                                                                </span>
+                                                                            </li>
+                                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                                            <li class="page-item">
+                                                                                <a class="page-link next" href="#">Next</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--all model data start-->
+    <!-- create events data start -->
+    <div class="modal fade createeventsmodal" id="createneweventslayout" tabindex="-1" role="dialog" aria-labelledby="createeventstitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createeventstitle">Create Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="create-events-gallery">
+                        <div class="event-gallery-img-box">
+                            <div class="box">
+                                <div class="upload-options">
+                                    <img src="img/blankimg.png">
+                                    <label>
+                            <input type="file" class="image-upload" accept="image/*" />
+                            </label>
+                                    <h2>Blank</h2>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg1.png" alt="img">
+                                </div>
+                                <h2>New Years</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg2.png" alt="img">
+                                </div>
+                                <h2>Cristmas</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg3.png" alt="img">
+                                </div>
+                                <h2>Birthday</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg4.png" alt="img">
+                                </div>
+                                <h2>Wedding</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg5.png" alt="img">
+                                </div>
+                                <h2>Graduation</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg6.png" alt="img">
+                                </div>
+                                <h2>Halloween</h2>
+                            </div>
+                            <div class="box">
+                                <div class="uploaded-img">
+                                    <img src="img/eventimg7.png" alt="img">
+                                </div>
+                                <h2>Aniversary</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--create events data end -->
+    <!-- event setting data start -->
+
+    <div class="modal fade eventssettinglayout" id="eventssettinglayout" tabindex="-1" role="dialog" aria-labelledby="eventssettingtitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventssettingtitle">Event Settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="event-setting-layout">
+
+
+                        <div class="row no-gutters row-bordered row-border-light">
+                            <div class="col-md-3 pt-0">
+                                <div class="account-left-menubar">
+                                    <div class="list-group list-group-flush events-settings-links">
+                                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#event-general">
+                                            <span class="eventtabimg"><img src="img/events-general-icon.png"></span><span class="evets-stmenu"><span class="step">Step 1</span><span class="tmenu">General</span></span>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#event-text"><span class="eventtabimg"><img src="img/event-text-icon.png"></span><span class="evets-stmenu"><span class="step">Step 2</span><span class="tmenu">Text </span></span></a>
+                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#event-design"><span class="eventtabimg"><img src="img/event-design-icon.png"></span><span class="evets-stmenu"><span class="step">Step 3</span><span class="tmenu">Design</span></span></a>
+                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#event-sharing"><span class="eventtabimg"><img src="img/event-sharing-icon.png"></span><span class="evets-stmenu"><span class="step">Step 4</span><span class="tmenu">Sharing</span></span></a>
+                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#event-whitelabel"><span class="eventtabimg"><img src="img/event-wlable-icon.png"></span><span class="evets-stmenu"><span class="step">Step 5</span><span class="tmenu">White label</span></span></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="tab-content">
+                                    <!--event setting gernal layout start -->
+                                    <div class="tab-pane fade active show" id="event-general">
+                                        <div class="events_setting_layout_form">
+                                            <form>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Event name</label></div>
+                                                    <input class="e-name" type="text" class="form-control" placeholder="Christmas Santa Chalange ">
+                                                </div>
+
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"> <label>Size</label></div>
+                                                    <div class="event-size-box">
+                                                        <div class="Sequare-size">
+
+                                                            <label class="sequare-input" for="sizeRadioInline1">
+                                                               
+                                                                <input type="radio" id="sizeRadioInline1" name="sizeRadioInline1" class="custom-size-input" checked>
+                                                                <div class="input-bg"><img src="img/size-seleted.png" alt="icon"></div>
+                                                            </label>
+                                                            <h3>Sequare</h3>
+                                                        </div>
+                                                        <div class="Portrait-size">
+                                                            <label class="Portrait-input" for="sizeRadioInline2">
+                                                                <input type="radio" id="sizeRadioInline2" name="sizeRadioInline1" class="custom-size-input">
+                                                                <div class="input-bg"><img src="img/size-seleted.png" alt="icon"></div>
+                                                            </label>
+                                                            <h3>Portrait</h3>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Flip Selfie Photo</label></div>
+                                                    <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                      </label>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Experiences</label></div>
+                                                    <div class="experiences-event-btn">
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </div>
+                                                        <span class="name">Photo</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">GIF</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">Boomerang</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                                <div class="events-setting-tab">
+
+                                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                                <h4 class="panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#photoframes" aria-expanded="false" aria-controls="collapseOne">
+                                                                        Photo Frames
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="photoframes" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                                <div class="panel-body">
+                                                                    <div class="photo-frame-gallery">
+                                                                        <div class="photo-frame">
+                                                                            <img src="img/photo-frame1.png" alt="photoframe">
+                                                                            <a class="close-icon" href="#"><img src="img/close-icon.png" alt="close-icon"></a>
+                                                                        </div>
+                                                                        <div class="photo-frame">
+                                                                            <img src="img/photo-frame2.png" alt="photoframe">
+                                                                            <a class="close-icon" href="#"><img src="img/close-icon.png" alt="close-icon"></a>
+                                                                        </div>
+                                                                        <div class="photo-frame">
+                                                                            <img src="img/photo-frame3.png" alt="photoframe">
+                                                                            <a class="close-icon" href="#"><img src="img/close-icon.png" alt="close-icon"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#GIFOptions" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        GIF Options
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="GIFOptions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                <div class="panel-body">
+                                                                    <div class="event-gif-option">
+                                                                        <div class="event-gif-btn">
+                                                                            <div class="form-check">
+                                                                                <label class="speed">Speed</label>
+                                                                            </div>
+                                                                            <div class="form-check custom-control custom-radio">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifSlow">
+                                                                                <label class="form-check-label" for="GifSlow">
+                                                                                Slow
+                                                                            </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifMedium">
+                                                                                <label class="form-check-label" for="GifMedium">
+                                                                                    Medium
+                                                                            </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifFast" checked>
+                                                                                <label class="form-check-label" for="GifFast">
+                                                                                    Fast
+                                                                            </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#BoomrangOptions" aria-expanded="false" aria-controls="collapseThree">
+                                                                        Boomrang Options
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="BoomrangOptions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                                <div class="panel-body">
+                                                                    <div class="event-gif-option">
+                                                                        <div class="event-gif-btn">
+                                                                            <div class="form-check">
+                                                                                <label class="speed">Speed</label>
+                                                                            </div>
+                                                                            <div class="form-check custom-control custom-radio">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifSlow">
+                                                                                <label class="form-check-label" for="GifSlow">
+                                                                                Slow
+                                                                            </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifMedium">
+                                                                                <label class="form-check-label" for="GifMedium">
+                                                                                    Medium
+                                                                            </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="radio" name="Gifvalue" id="GifFast" checked>
+                                                                                <label class="form-check-label" for="GifFast">
+                                                                                    Fast
+                                                                            </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group Options-btn form-inline event-genrel-options">
+                                                            <div class="label-heading"><label>Options</label></div>
+                                                            <div class="experiences-event-btn">
+                                                                <label class="switch">
+                                                                    <div class="exp-btn">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                                <span class="name">Filters</span>
+                                                              </label>
+                                                                <label class="switch">
+                                                                    <div class="exp-btn">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="slider round"></span>
+                                                                    </div>
+                                                                <span class="name">Stickers Off
+                                                                </span>
+                                                              </label>
+                                                                <label class="switch">
+                                                                    <div class="exp-btn">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="slider round"></span>
+                                                                    </div>
+                                                                <span class="name">Background Removal</span>
+                                                              </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Stickers" aria-expanded="false" aria-controls="collapseFour">
+                                                                        Stickers
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="Stickers" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                                <div class="panel-body">
+                                                                    <div class="event-sticker-option">
+                                                                        <div class="box">
+                                                                            <div class="upload-options">
+                                                                                <img src="img/stickerupload.png">
+                                                                                <label>
+                                                                        <input type="file" class="image-upload" accept="image/*" />
+                                                                        </label>
+                                                                                <h2>Drag and drop an image</h2>
+                                                                                <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                            </div>
+                                                                            <div class="sticker-event-paragraph">
+
+                                                                                <p>Stickers should be transparent pngs no more than 300px in any dimension.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Backgrounds" aria-expanded="false" aria-controls="collapseFive">
+                                                                        Backgrounds
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="Backgrounds" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                                <div class="panel-body">
+                                                                    <div class="event-sticker-option">
+                                                                        <div class="box">
+                                                                            <div class="upload-options">
+                                                                                <img src="img/stickerupload.png">
+                                                                                <label>
+                                                                        <input type="file" class="image-upload" accept="image/*" />
+                                                                        </label>
+                                                                                <h2>Drag and drop an image</h2>
+                                                                                <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                            </div>
+                                                                            <div class="sticker-event-paragraph">
+
+                                                                                <p>1600px X1600px</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="background-credit-remaning">
+                                                                            <h2>Credits Remaining <span>(0)</span></h2>
+                                                                            <a href="#" class="btn buy-more">Buy More Credits</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingSix">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Filters" aria-expanded="false" aria-controls="collapseSix">
+                                                                        Filters
+                                                              </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="Filters" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                                <div class="panel-body">
+                                                                    <div class="event-filter-box">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--event setting gernal layout end -->
+
+                                    <!--event setting text layout start -->
+                                    <div class="tab-pane fade" id="event-text">
+                                        <div class="events_setting_layout_form">
+                                            <div class="event-text-popup-layout">
+                                                <div class="event-text-btn-popup">
+                                                    <h3 class="heading">Buttons</h3>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Start</label>
+                                                                        <input type="text" class="form-control" placeholder="Start Illusnap">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Accept</label>
+                                                                        <input type="text" class="form-control" placeholder="I Like it">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Take Photo</label>
+                                                                        <input type="text" class="form-control" placeholder="Photo">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Retake</label>
+                                                                        <input type="text" class="form-control" placeholder="Retake">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Camera</label>
+                                                                        <input type="text" class="form-control" placeholder="Camera">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Next</label>
+                                                                        <input type="text" class="form-control" placeholder="Next">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Select</label>
+                                                                        <input type="text" class="form-control" placeholder="Select">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Send</label>
+                                                                        <input type="text" class="form-control" placeholder="Send">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Done</label>
+                                                                        <input type="text" class="form-control" placeholder="Done">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="event-text-btn-popup Instructions">
+                                                    <h3 class="heading">Instructions</h3>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Frames</label>
+                                                                        <input type="text" class="form-control" placeholder="Select a Frame">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Backgrounds</label>
+                                                                        <input type="text" class="form-control" placeholder="Select a Background">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Stickers</label>
+                                                                        <input type="text" class="form-control" placeholder="Add Stickers">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="text-btn-instr-input">
+                                                                        <label>Filters</label>
+                                                                        <input type="text" class="form-control" placeholder="Select a Filter">
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--event setting text layout end -->
+
+                                    <!--event setting design layout start -->
+                                    <div class="tab-pane fade" id="event-design">
+                                        <div class="events_setting_layout_form">
+                                            <div class="event-design-setting">
+                                                <div class="previewbtn"><span class="btn" onclick="showperview()">Perview</span></div>
+                                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingOne">
+                                                            <h4 class="panel-title">
+                                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Logodesign" aria-expanded="false" aria-controls="collapseOne">
+                                                                    Logo
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="Logodesign" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                            <div class="panel-body">
+                                                                <div class="event-sticker-option logo-design-pop">
+                                                                    <div class="design-pp-heading">
+                                                                        <h2>Logo</h2>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="upload-options">
+                                                                            <img src="img/stickerupload.png">
+                                                                            <label>
+                                                                            <input type="file" class="image-upload" accept="image/*" />
+                                                                            </label>
+                                                                            <h2>Drag and drop an image</h2>
+                                                                            <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                        </div>
+                                                                        <div class="sticker-event-paragraph">
+
+                                                                            <p>Max. width 400 Pixel</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="logo_event_name">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Event name</label>
+                                                                        <select class="form-select" aria-label="Default select">
+                                                                        <option selected="">Start Screen Bottom</option>
+                                                                        <option value="Start Screen Bottom">Start Screen Bottom</option>
+                                                                     
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#StartScreen" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    Start Screen
+                                                            </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="StartScreen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                            <div class="panel-body">
+                                                                <div class="event-sticker-option stsc-design-pop">
+                                                                    <div class="design-pp-heading">
+                                                                        <h2>Start Screen</h2>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="upload-options">
+                                                                            <img src="img/stickerupload.png">
+                                                                            <label>
+                                                                            <input type="file" class="image-upload" accept="image/*" />
+                                                                            </label>
+                                                                            <h2>Drag and drop an image</h2>
+                                                                            <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                        </div>
+                                                                        <div class="sticker-event-paragraph">
+
+                                                                            <p>Max. width 400 Pixel</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_texteditor">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Extra Start Screen Text</label>
+                                                                        <div class="extra-start-editor-box">
+                                                                            <form>
+                                                                                <textarea name="startscreen" id="startscreen" rows="4" cols="30">
+                                                                                    Type Something.....
+                                                                                </textarea>
+                                                                                <script>
+                                                                                    CKEDITOR.replace('startscreen');
+                                                                                </script>
+                                                                            </form>
+                                                                        </div>
+
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_name">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Event name</label>
+                                                                        <select class="form-select" aria-label="Default select">
+                                                                        <option selected="">Start Screen Bottom</option>
+                                                                        <option value="Start Screen Bottom">Thank Screen Bottom</option>
+                                                                     
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#ThanksScreen" aria-expanded="false" aria-controls="collapseThree">
+                                                                    Thanks Screen
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="ThanksScreen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                            <div class="panel-body">
+                                                                <div class="event-sticker-option stsc-design-pop">
+                                                                    <div class="design-pp-heading">
+                                                                        <h2>Start Screen</h2>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="upload-options">
+                                                                            <img src="img/stickerupload.png">
+                                                                            <label>
+                                                                            <input type="file" class="image-upload" accept="image/*" />
+                                                                            </label>
+                                                                            <h2>Drag and drop an image</h2>
+                                                                            <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                        </div>
+                                                                        <div class="sticker-event-paragraph">
+
+                                                                            <p>Max. width 400 Pixel</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_texteditor">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Extra Start Screen Text</label>
+                                                                        <div class="extra-start-editor-box">
+                                                                            <form>
+                                                                                <textarea name="thankscreen" id="thankscreen" rows="4" cols="30">
+                                                                                    Type Something.....
+                                                                                </textarea>
+                                                                                <script>
+                                                                                    CKEDITOR.replace('thankscreen');
+                                                                                </script>
+                                                                            </form>
+                                                                        </div>
+
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_name">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Event name</label>
+                                                                        <select class="form-select" aria-label="Default select">
+                                                                        <option selected="">Start Screen Bottom</option>
+                                                                        <option value="Start Screen Bottom">Thank Screen Bottom</option>
+                                                                     
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingFour">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Backgrounddesign" aria-expanded="false" aria-controls="collapseFour">
+                                                                    Background
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="Backgrounddesign" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                            <div class="panel-body">
+                                                                <div class="event-sticker-option stsc-design-pop">
+                                                                    <div class="design-pp-heading">
+                                                                        <h2>Background Image</h2>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="upload-options">
+                                                                            <img src="img/stickerupload.png">
+                                                                            <label>
+                                                                            <input type="file" class="image-upload" accept="image/*" />
+                                                                            </label>
+                                                                            <h2>Drag and drop an image</h2>
+                                                                            <h3>Or <span>Browse</span> to chose a file </h3>
+                                                                        </div>
+                                                                        <div class="sticker-event-paragraph">
+
+                                                                            <p>Max. width 400 Pixel</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_bgcolor">
+                                                                    <div class="form-group">
+                                                                        <label>Background Color</label>
+
+                                                                        <span class="color-picker">
+                                                                            <label for="colorPicker">
+                                                                              <input type="color" value="#1717FE" id="colorPicker">
+                                                                            </label>
+                                                                          </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stsc_event_name">
+                                                                    <div class="form-group form-inline">
+                                                                        <label>Background Animation</label>
+                                                                        <select class="form-select" aria-label="Default select">
+                                                                        <option selected="">Clouds</option>
+                                                                        <option value="Start Screen Bottom">Clouds</option>
+                                                                     
+                                                                      </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingFive">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Buttonsdesign" aria-expanded="false" aria-controls="collapseFive">
+                                                                    Buttons
+                                                        </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="Buttonsdesign" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                            <div class="panel-body">
+                                                                <div class="event-design-button-layout">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col-md-7 col-xs-12">
+                                                                                <div class="form-group form-inline">
+                                                                                    <label>Button Style</label>
+                                                                                    <select class="form-select" aria-label="Default select">
+                                                                                    <option selected="">Normal</option>
+                                                                                    <option value="Medium">Medium</option>
+                                                                                    <option value="Bold">Bold</option>
+                                                                                
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-5 col-xs-12">
+                                                                                <div class="form-group form-inline">
+                                                                                    <label>Button Color</label>
+                                                                                    <span class="color-picker">
+                                                                                        <label for="btncolorPicker">
+                                                                                          <input type="color" value="#1717FE" id="btncolorPicker">
+                                                                                        </label>
+                                                                                      </span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 col-xs-12">
+                                                                                <div class="form-group form-inline">
+                                                                                    <label>Button Position</label>
+                                                                                    <select class="form-select" aria-label="Default select">
+                                                                                    <option selected="">Normal</option>
+                                                                                    <option value="Medium">Medium</option>
+                                                                                    <option value="Bold">Bold</option>
+                                                                                
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-5 col-xs-12">
+                                                                                <div class="form-group form-inline">
+                                                                                    <label>Text Color</label>
+                                                                                    <span class="color-picker">
+                                                                                        <label for="textcolorPicker">
+                                                                                          <input type="color" value="#1717FE" id="textcolorPicker">
+                                                                                        </label>
+                                                                                      </span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12">
+                                                                                <div class="buttons-event-ppt">
+                                                                                    <label class="switch">
+                                                                                        <span class="name">Button Icon</span>
+                                                                                        <div class="exp-btn">
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="slider round"></span>
+                                                                                </div>
+                                                                                    
+                                                                                  </label>
+                                                                                    <label class="switch">
+                                                                                        <span class="name">Hide Start Button</span>
+                                                                                        <div class="exp-btn">
+                                                                                            <input type="checkbox" checked>
+                                                                                            <span class="slider round"></span>
+                                                                                        </div>
+                                                                                    
+                                                                                  </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                                <div class="privew-screen-layout" id="showperviewscreen">
+                                                    <div class="backdesignbtn">
+                                                        <span class="btn" onclick="hideperview()">Back to Design</span>
+                                                    </div>
+                                                    <div class="start-thnx-screen">
+                                                        <ul class="nav" role="tablist">
+                                                            <li role="presentation" class="active"><a href="#stscreen" role="tab" class="btn stbtn active" data-toggle="tab">Start Screen</a></li>
+                                                            <li role="presentation"><a href="#tpscreen" class="btn btn-primary stbtn" role="tab" data-toggle="tab">Thanks Screen</a></li>
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane active" id="stscreen">
+                                                                <div class="prievew-st-screen">
+                                                                    <div class="perview-bg">
+                                                                        <div class="perview-img-show">
+                                                                            <img src="img/perview-img.png" alt="photo frame">
+                                                                        </div>
+                                                                        <a href="#" class="btn perview-done-btn">Done</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="tpscreen">Thanks screen</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--event setting design layout end -->
+
+                                    <!--event setting sharing layout start -->
+                                    <div class="tab-pane fade" id="event-sharing">
+                                        <div class="events_setting_layout_form">
+                                            <form>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Sharing</label></div>
+                                                    <div class="experiences-event-btn">
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round"></span>
+                                                    </div>
+                                                        <span class="name">Email</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked="">
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">Facebook</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked="">
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">Twitter</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Require Email</label></div>
+                                                    <div class="experiences-event-btn">
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round"></span>
+                                                    </div>
+                                                       
+                                                      </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Email Subject</label></div>
+                                                    <input class="e-name" type="text" placeholder="Here's your photo">
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Email Message</label></div>
+                                                    <input class="e-name" type="text" placeholder="Christmas Santa Chalange ">
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Social Message</label></div>
+                                                    <input class="e-name" type="text" placeholder="Check out my photo from the illusnap. https://www.illus...">
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Uploads</label></div>
+                                                    <div class="experiences-event-btn">
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round"></span>
+                                                    </div>
+                                                        <span class="name">Gallery</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked="">
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">Dropbox</span>
+                                                      </label>
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                                <input type="checkbox" checked="">
+                                                                <span class="slider round"></span>
+                                                            </div>
+                                                        <span class="name">Google</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Ask to add to Gallery</label></div>
+                                                    <div class="experiences-event-btn">
+                                                        <label class="switch">
+                                                            <div class="exp-btn">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round"></span>
+                                                    </div>
+                                                      </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-inline">
+                                                    <div class="label-heading"><label>Gallery Question Text</label></div>
+                                                    <input class="e-name" type="text" placeholder="Can we add your photo to our online gallery?">
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <!--event setting sharing layout end -->
+
+                                    <!--event setting whitelabel layout start -->
+                                    <div class="tab-pane fade" id="event-whitelabel">
+
+                                        <div class="events_setting_layout_form">
+                                            <div class="event-setting-whitelabel-layout">
+                                                <form>
+                                                    <div class="form-group form-inline">
+                                                        <div class="label-heading"><label>Sharing</label></div>
+                                                        <div class="event-whitelabel-btn">
+
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="sharingvalue" id="sharingnone" checked>
+                                                                <label class="form-check-label" for="sharingnone">
+                                                                None
+                                                            </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="sharingvalue" id="sharingbrand">
+                                                                <label class="form-check-label" for="sharingbrand">
+                                                                    <input class="e-name" type="text" placeholder="my Brand"><span>.illusnap.me</span>
+                                                            </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-inline">
+                                                        <div class="label-heading"><label>White Label Email</label></div>
+                                                        <div class="event-whitelabel-btn">
+
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="wlevalue" id="sharingwlnone" checked>
+                                                                <label class="form-check-label" for="sharingwlnone">
+                                                                None
+                                                            </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="wlevalue" id="sharingwlbrand">
+                                                                <label class="form-check-label" for="sharingwlbrand">
+                                                                    <input class="e-name" type="text" placeholder="my Brand"><span>.illusnap.me</span>
+                                                            </label>
+                                                            </div>
+
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="wlevalue" id="sharingverify">
+                                                                <label class="form-check-label" for="sharingverify">
+                                                                    <input class="e-name" type="text" placeholder="examplemail.example domain.com"><span class="verify">Verify</span>
+                                                            </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-inline">
+                                                        <div class="label-heading"><label>Email From Name</label></div>
+                                                        <input class="e-name" type="text" placeholder="My Name">
+                                                    </div>
+                                                </form>
+                                                <p>illusnap.me is a default whitelabel domain with no branding that does not show affiliation with virtualbooth.me. You can use this domain with your brand as a prefix to hide the source of your booth.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--event setting whitelabel layout end -->
+                                    <div class="event-setting-sc-btn">
+                                        <div class="event-btn float-right">
+                                            <a href="#" class="btn btn-primary close-event" data-dismiss="modal" aria-label="Close">Close</a>
+                                            <a href="#" class="btn btn-primary save-events">Save Event</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- event setting data end -->
+    <!--end all model data end-->
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

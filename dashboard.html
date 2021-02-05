@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-r-0 p-l-0">
+                    <!-- #Left Sidebar ==================== -->
+                    <div class="sidebar">
+                        <div class="sidebar-inner">
+                            <!-- ### $Sidebar Header ### -->
+                            <div class="sidebar-logo">
+                                <div class="peers ai-c fxw-nw">
+                                    <div class="peer peer-greed">
+                                        <a class="sidebar-link td-n" href="index.html">
+                                            <div class="peers ai-c fxw-nw">
+                                                <div class="peer">
+                                                    <div class="logo">
+                                                        <img src="img/logo.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- ### $Sidebar Menu ### -->
+                            <ul class="sidebar-menu">
+                                <li class="nav-item actived">
+                                    <a class="sidebar-link active" href="dashboard.html">
+                                        <span class="icon-holder">
+                                         <img src="img/dashboard-icon.png">
+                                      </span>
+                                        <span class="title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="events.html">
+                                        <span class="icon-holder">
+                                        <img src="img/events-icon.png">
+                                        </span>
+                                        <span class="title">Events</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="integrations.html">
+                                        <span class="icon-holder">
+                                       <img src="img/integration-icon.png">
+                                        </span>
+                                        <span class="title">Integrations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="account.html">
+                                        <span class="icon-holder">
+                                       <img src="img/account-icon.png">
+                                        </span>
+                                        <span class="title">Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="upgrade.html">
+                                        <span class="icon-holder">
+                                         <img src="img/upgrade-icon.png">
+                                        </span>
+                                        <span class="title">Upgrade</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changebackground.html">
+                                        <span class="icon-holder">
+                                         <img src="img/change-background-icon.png">
+                                        </span>
+                                        <span class="title">Change Background </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changelog.html">
+                                        <span class="icon-holder">
+                                            <img src="img/change-log-icon.png">
+                                        </span>
+                                        <span class="title">Change Log</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="sidebar-link" href="helpsupport.html">
+                                        <span class="icon-holder">
+                                          <img src="img/helpsupport-icon.png">
+                                        </span>
+                                        <span class="title">Help & Support</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- #Main ============================ -->
+                    <div class="page-container">
+                        <!-- ### $Topbar ### -->
+                        <div class="header navbar">
+                            <div class="header-container">
+                                <ul class="nav-left">
+                                    <h2>Dashboard</h2>
+                                </ul>
+                                <ul class="nav-right">
+                                    <li class="notifications">
+
+                                        <a href="#">
+                                            <img src="img/notification-icon.png">
+                                        </a>
+                                    </li>
+                                    <li class="profile_box">
+                                        <a href="#">
+                                            <div class="mR-10">
+                                                <img class="bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                                            </div>
+                                            <div class="profile-name">
+                                                <span>
+                                                <span class="fw-500">John Doe</span>
+                                                <span class="username">user</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ### $App Screen Content ### -->
+                        <main class='main-content mT-20 pb-50'>
+                            <div id='mainContent'>
+                                <div class="row">
+                                    <div class="col-md-9 p-r-0 p-l-0">
+                                        <div class="row">
+                                            <div class="top-event-box-wrapper">
+                                                <div class="row gap-20">
+                                                    <!-- #Toatl events ==================== -->
+                                                    <div class='col-md-4'>
+                                                        <div class="das-event-boxes">
+                                                            <div class="das-event-title">
+                                                                <h2>136</h2>
+                                                                <h6 class="lh-1">Total Events</h6>
+                                                            </div>
+                                                            <div class="das-event-icon">
+                                                                <div class="box-icon">
+                                                                    <img src="img/total-event.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- #Active Events ==================== -->
+                                                    <div class='col-md-4'>
+                                                        <div class="das-event-boxes">
+                                                            <div class="das-event-title">
+                                                                <h2>45</h2>
+                                                                <h6 class="lh-1">Active Events</h6>
+                                                            </div>
+                                                            <div class="das-event-icon">
+                                                                <div class="box-icon">
+                                                                    <img src="img/active-event-icon.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- #today photos ==================== -->
+                                                    <div class='col-md-4'>
+                                                        <div class="das-event-boxes">
+                                                            <div class="das-event-title">
+                                                                <h2>22</h2>
+                                                                <h6 class="lh-1">Today Photos</h6>
+                                                            </div>
+                                                            <div class="das-event-icon">
+                                                                <div class="box-icon">
+                                                                    <img src="img/today-event-pic.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="dashboard-event-box-wrapper full-width">
+                                                <div class="col-md-12">
+                                                    <!-- #event Report ==================== -->
+
+                                                    <div class="event-dashboard-wrapper">
+                                                        <div class="dasevent-table-heading">
+                                                            <div class="float-left">
+                                                                <h2>Events</h2>
+                                                            </div>
+                                                            <div class="event-btn float-right">
+                                                                <a href="#" class="btn btn-primary view-all">View All</a>
+                                                                <a href="#" class="btn btn-primary new-event">+ New Event</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event-table-box">
+
+                                                            <div class="table-responsive p-20">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class=" bdwT-0">Name</th>
+                                                                            <th class=" bdwT-0 text-center">Photos</th>
+                                                                            <th class=" bdwT-0 text-center">Email</th>
+                                                                            <th class=" bdwT-0 text-center">Facebook</th>
+                                                                            <th class=" bdwT-0 text-center">Twitter</th>
+                                                                            <th class=" bdwT-0 text-center">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="name">Winter Wonderland <span><a href="#" class="btn pause-btn">Paused</a></span></td>
+                                                                            <td class="text-center"><img src="img/eventimg.png"> </td>
+                                                                            <td class="text-center"><span>06</span></td>
+                                                                            <td class="text-center"><span>12</span></td>
+                                                                            <td class="text-center"><span>03</span></td>
+                                                                            <td class="text-center"><span><a href="#"><img src="img/actiondot.png"></a></span></td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 pr-0">
+                                        <div class="dashboard-right-side-box">
+                                            <div class="dashboard-need-box">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h1 class="card-title">Need Inspiration?
+                                                        </h1>
+                                                        <p class="card-text">Try one of the demo events.</p>
+                                                        <a href="#" class="btn btn-primary">Try Sample Event</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dashboard-latest-pic">
+                                                <div class="card">
+                                                    <h1 class="card-title">Latest Photos</h1>
+                                                    <div class="latest-pic-box">
+                                                        <img src="img/img1.png">
+                                                        <img src="img/img2.png">
+                                                        <img src="img/img3.png">
+                                                        <img src="img/img4.png">
+                                                        <img src="img/img5.png">
+                                                        <img src="img/img6.png">
+                                                        <img src="img/img9.png">
+                                                        <img src="img/img7.png">
+                                                        <img src="img/img8.png">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

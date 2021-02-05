@@ -1,0 +1,94 @@
+.changebackground-layout-wrapper {
+    background-color: $whitecolor;
+    border-radius: 10px;
+    padding: 60px 40px;
+    .changebg-form-layout {
+        .creadit_tpvalue {
+            span {
+                @include subheading;
+                margin-bottom: 8px;
+                display: block;
+            }
+            h2 {
+                font-size: 15px;
+                color: #02000A;
+                font-weight: 500;
+            }
+            p {
+                font-size: 13px;
+                color: #606B86;
+                font-weight: lighter;
+            }
+        }
+        .chb_credit_form {
+            .form-group {
+                label {
+                    color: #9490A4;
+                    font-size: 15px;
+                    font-weight: 500;
+                    display: block;
+                }
+                input {
+                    border: 1px solid #EBEBEB;
+                    border-radius: 10px;
+                    background: #FAFAFA;
+                    height: 60px;
+                    padding: 15px;
+                }
+                select {
+                    border: 1px solid #EBEBEB;
+                    border-radius: 10px;
+                    background: #FAFAFA;
+                    height: 60px;
+                    width: 100%;
+                    padding: 15px;
+                }
+                .creditvalue {
+                    background: #ECECEC;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 10px;
+                    .cr_value {
+                        @include subheading;
+                    }
+                    .cr_name {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #6F6E73;
+                        text-transform: capitalize;
+                    }
+                }
+                .credit_price {
+                    background: #ECECEC;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 10px;
+                    .doll_credit {
+                        .dollor {
+                            font-size: 13px;
+                            font-weight: normal;
+                            color: #02000A;
+                            padding-right: 5px;
+                        }
+                        .price {
+                            @include subheading;
+                        }
+                    }
+                    .ch-cost {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #6F6E73;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .btn-shop-now {
+                .btn {
+                    @include btnlayout;
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

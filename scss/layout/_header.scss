@@ -1,0 +1,62 @@
+//============
+// Header
+//============
+.header {
+    .header-container {
+        width: 100%;
+        padding-top: 20px;
+        border-bottom: 1px solid #EBEBEB;
+        .nav-left {
+            float: left;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            h2 {
+                font-size: 22px;
+                font-weight: 600;
+                padding-top: 15px;
+            }
+        }
+        .nav-right {
+            float: right;
+            li {
+                float: left;
+                a {
+                    color: #72777a;
+                    display: block;
+                    padding: 0 15px;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            .notifications {
+                img {
+                    max-width: 50px;
+                    height: auto;
+                }
+            }
+            .profile_box {
+                a {
+                    display: flex;
+                    padding-left: 0px;
+                    div.profile-name {
+                        padding-top: 8px;
+                        span {
+                            font-weight: 500;
+                            color: #02000A;
+                            display: block;
+                            line-height: 17px;
+                            .username {
+                                color: #7B7B82;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                img {
+                    max-width: 50px;
+                }
+            }
+        }
+    }
+}

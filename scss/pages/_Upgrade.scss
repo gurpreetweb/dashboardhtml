@@ -1,0 +1,81 @@
+.upgrade-layout-wrapper {
+    margin-top: 50px;
+    h1 {
+        .doller {
+            font-size: 30px;
+            color: #242F40;
+        }
+        .price {
+            color: #242F40;
+            font-size: 75px;
+        }
+        .mo {
+            font-size: 17px;
+            color: #5B6B82;
+        }
+    }
+    .card {
+        background-color: $whitecolor;
+        border-radius: 20px;
+        border: none;
+        padding: 50px 0px 20px 0px;
+        box-shadow: 0px 1px 8px #d6d6d6;
+        .card-header {
+            background: transparent;
+            border: none;
+            h2 {
+                font-size: 15px;
+                font-weight: 500;
+                color: #02000A;
+            }
+        }
+        .card-block {
+            border: none;
+            .list-group {
+                padding-left: 0px;
+                border: none;
+                .list-group-item {
+                    font-size: 15px;
+                    color: #02000A;
+                    padding-bottom: 10px;
+                    font-weight: normal;
+                    border: none;
+                    &.close {
+                        color: #9490A4;
+                    }
+                    span {
+                        padding-right: 15px;
+                    }
+                }
+            }
+            .btn {
+                @include whitebtnlayout;
+            }
+        }
+        &.professional-card-box {
+            border: 1px solid #5B33F1;
+            box-shadow: 0px 1px 30px #cccccc;
+            .btn {
+                @include btnlayout;
+            }
+        }
+        &.complete-card-layout {
+            position: relative;
+            .top-heading {
+                color: #5B33F1;
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+                background: #EAE5FF;
+                padding: 8px 25px;
+                border-radius: 10px;
+                position: absolute;
+                top: -15px;
+                left: 0;
+                right: 0;
+                max-width: 180px;
+                margin: auto;
+            }
+        }
+    }
+}

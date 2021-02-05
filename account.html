@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-r-0 p-l-0">
+                    <!-- #Left Sidebar ==================== -->
+                    <div class="sidebar">
+                        <div class="sidebar-inner">
+                            <!-- ### $Sidebar Header ### -->
+                            <div class="sidebar-logo">
+                                <div class="peers ai-c fxw-nw">
+                                    <div class="peer peer-greed">
+                                        <a class="sidebar-link td-n" href="index.html">
+                                            <div class="peers ai-c fxw-nw">
+                                                <div class="peer">
+                                                    <div class="logo">
+                                                        <img src="img/logo.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- ### $Sidebar Menu ### -->
+                            <ul class="sidebar-menu">
+                                <li class="nav-item actived">
+                                    <a class="sidebar-link" href="dashboard.html">
+                                        <span class="icon-holder">
+                                         <img src="img/dashboard-icon.png">
+                                      </span>
+                                        <span class="title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="events.html">
+                                        <span class="icon-holder">
+                                        <img src="img/events-icon.png">
+                                        </span>
+                                        <span class="title">Events</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="integrations.html">
+                                        <span class="icon-holder">
+                                       <img src="img/integration-icon.png">
+                                        </span>
+                                        <span class="title">Integrations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link active' href="account.html">
+                                        <span class="icon-holder">
+                                       <img src="img/account-icon.png">
+                                        </span>
+                                        <span class="title">Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="upgrade.html">
+                                        <span class="icon-holder">
+                                         <img src="img/upgrade-icon.png">
+                                        </span>
+                                        <span class="title">Upgrade</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changebackground.html">
+                                        <span class="icon-holder">
+                                         <img src="img/change-background-icon.png">
+                                        </span>
+                                        <span class="title">Change Background </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='sidebar-link' href="changelog.html">
+                                        <span class="icon-holder">
+                                            <img src="img/change-log-icon.png">
+                                        </span>
+                                        <span class="title">Change Log</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="sidebar-link" href="helpsupport.html">
+                                        <span class="icon-holder">
+                                          <img src="img/helpsupport-icon.png">
+                                        </span>
+                                        <span class="title">Help & Support</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- #Main ============================ -->
+                    <div class="page-container">
+                        <!-- ### $Topbar ### -->
+                        <div class="header navbar">
+                            <div class="header-container">
+                                <ul class="nav-left">
+                                    <h2>Account</h2>
+                                </ul>
+                                <ul class="nav-right">
+                                    <li class="notifications">
+
+                                        <a href="#">
+                                            <img src="img/notification-icon.png">
+                                        </a>
+                                    </li>
+                                    <li class="profile_box">
+                                        <a href="#">
+                                            <div class="mR-10">
+                                                <img class="bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                                            </div>
+                                            <div class="profile-name">
+                                                <span>
+                                                <span class="fw-500">John Doe</span>
+                                                <span class="username">user</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ### Integrations Screen Content ### -->
+                        <main class='main-content mT-0'>
+                            <div id='mainContent'>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 p-l-0">
+                                        <div class="account-layout-wrapper">
+
+                                            <div class="row no-gutters row-bordered row-border-light">
+                                                <div class="col-md-3 pt-0">
+                                                    <div class="account-left-menubar">
+                                                        <div class="list-group list-group-flush account-settings-links">
+                                                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-profile"><span><i class="fa fa-user" aria-hidden="true"></i></span>Profile
+                                                                </a>
+                                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-password"><span><i class="fa fa-lock"></i></span>Password</a>
+                                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-plan"><span><i class="fa fa-file" aria-hidden="true"></i></span>plan</a>
+                                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-billing"><span><i class="fa fa-usd" aria-hidden="true"></i></span>Billing</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="tab-content">
+
+                                                        <div class="tab-pane fade active show" id="account-profile">
+                                                            <div class="account-top-heading">
+                                                                <div class="dasevent-table-heading">
+                                                                    <div class="float-left">
+                                                                        <h2>Edit Profile</h2>
+                                                                    </div>
+                                                                    <div class="account-btn float-right">
+                                                                        <a href="#" class="btn btn-primary save-changes">Save Changes</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_account">
+                                                                <div class="card-body media align-items-center">
+                                                                    <div class="account-edit-img">
+                                                                        <img src="img/pic.png" alt="" class="d-block ui-w-80">
+                                                                        <span class="account-edit-icon"><img src="img/account-edit-icon.png"></span>
+                                                                    </div>
+                                                                    <div class="media-body ml-4">
+                                                                        <h5>John Doe</h5>
+                                                                        <span>User</span>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="account-profile-form">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <div class="form-group">
+                                                                                    <label>First Name</label>
+                                                                                    <input type="text" class="form-control mb-1" value="John">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="form-group">
+                                                                                    <label>Last Name</label>
+                                                                                    <input type="text" class="form-control" value="Doe">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12">
+                                                                                <div class="form-group">
+                                                                                    <label>Email</label>
+                                                                                    <input type="text" class="form-control mb-1" value="Doe@gmail.com">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="account-password">
+                                                            <div class="account-top-heading">
+                                                                <div class="dasevent-table-heading">
+                                                                    <div class="float-left">
+                                                                        <h2>Change Password</h2>
+                                                                    </div>
+                                                                    <div class="account-btn float-right">
+                                                                        <a href="#" class="btn btn-primary save-changes">Save Changes</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_account">
+                                                                <div class="card-body pb-2">
+                                                                    <div class="account-profile-form">
+                                                                        <form>
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="form-group">
+                                                                                        <label>Old password</label>
+                                                                                        <input type="password" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="form-group">
+                                                                                        <label>New password</label>
+                                                                                        <input type="password" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="form-group">
+                                                                                        <label>Repeat new password</label>
+                                                                                        <input type="password" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="account-plan">
+                                                            <div class="account-top-heading">
+                                                                <div class="dasevent-table-heading">
+                                                                    <div class="float-left">
+                                                                        <h2>Plan</h2>
+                                                                    </div>
+                                                                    <div class="account-btn float-right">
+                                                                        <a href="#" class="btn cancle-subscription">Cancel Subscription</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_account">
+                                                                <div class="card-body pb-2">
+                                                                    <div class="account-profile-subscription">
+                                                                        <h3 class="text-center">Virtual Booth Complete</h3>
+                                                                        <div class="subscription-price">
+                                                                            <h1 class="text-center"><span class="doller">$</span><span class="price">49</span><span class="mo">/mo</span></h1>
+                                                                        </div>
+                                                                        <div class="subscription-btn">
+                                                                            <a href="#" class="btn btn-primary change-plan">Change Plan</a>
+                                                                            <a href="#" class="btn btn-primary change-option">Change Option</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="account-billing">
+                                                            <div class="account-top-heading">
+                                                                <div class="dasevent-table-heading">
+                                                                    <div class="float-left">
+                                                                        <h2>Billing</h2>
+                                                                    </div>
+                                                                    <div class="account-btn float-right">
+                                                                        <a href="#" class="btn cancle-subscription">Cancel Subscription</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_account">
+                                                                <div class="card-body pb-2">
+                                                                    <div class="account-profile-subscription">
+                                                                        <div class="card-body media align-items-center text-center">
+                                                                            <div class="account-billing-img">
+                                                                                <img src="img/billing-icon.png" alt="">
+                                                                                <div class="account-billing-text">
+                                                                                    <h5>American Expres <span>3005</span></h5>
+                                                                                    <h5>Expires date <span>04/2021</span></h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="subscription-btn">
+                                                                            <a href="#" class="btn btn-primary change-plan">Remove Card</a>
+                                                                            <a href="#" class="btn btn-primary change-option">Change Card</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

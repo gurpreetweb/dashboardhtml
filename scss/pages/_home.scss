@@ -1,0 +1,168 @@
+//============
+// Page - main dashboard
+//============
+.top-event-box-wrapper {
+    width: 100%;
+    .das-event-boxes {
+        background: $boxbgcolor;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        .das-event-title {
+            width: 65%;
+            h2 {
+                font-weight: bold;
+                font-size: 25px;
+                color: #02000A;
+            }
+            h6 {
+                color: #02000A;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        .das-event-icon {
+            width: 35%;
+            .box-icon img {
+                width: 52px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.event-dashboard-wrapper {
+    margin-top: 40px;
+    .dasevent-table-heading {
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 100%;
+        h2 {
+            font-size: 22px;
+            color: #02000A;
+            padding-top: 15px;
+        }
+        .event-btn {
+            .view-all {
+                @include bluebtnlayout;
+                width: 116px;
+                border-radius: 7px;
+            }
+            .new-event {
+                @include btnlayout;
+                padding: 12px 20px;
+                margin-bottom: 0px;
+                border-radius: 7px;
+            }
+        }
+    }
+    .event-table-box {
+        background: $boxbgcolor;
+        padding: 10px;
+        border-radius: 10px;
+        table {
+            thead {
+                background-color: #F8F8F8;
+                border-radius: 25px;
+                th {
+                    color: #9490A4;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border-top: none!important;
+                    border: none;
+                    vertical-align: middle;
+                    &:first-child {
+                        border-top-left-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                    }
+                    &:last-child {
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-top: none;
+                    border-bottom: 1px solid #EBEBEB;
+                    td {
+                        vertical-align: middle;
+                        border-top: none!important;
+                        .pause-btn {
+                            font-size: 14px;
+                            color: #E18E12;
+                            border: 1px solid #E18E12;
+                            font-weight: 300;
+                            background-color: #FEF3E2;
+                            padding: 2px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-right-side-box {
+    .dashboard-need-box {
+        .card {
+            background: #F13D7A;
+            border-radius: 15px;
+            .card-body {
+                padding: 30px 20px 25px;
+                .card-title {
+                    color: $whitecolor;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                .card-text {
+                    color: $whitecolor;
+                    font-size: 15px;
+                    font-weight: normal;
+                    line-height: 18px;
+                }
+                .btn {
+                    background-color: #F24982;
+                    border: 1px solid #FB6F9E;
+                    color: #EDE83A;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 11px 15px;
+                }
+            }
+        }
+    }
+    .dashboard-latest-pic {
+        margin-top: 30px;
+        .card {
+            background: #F1F1F1;
+            border: 1px solid #E2E2E2;
+            border-radius: 15px;
+            padding: 15px;
+            .card-title {
+                font-size: 22px;
+                font-weight: 400;
+                color: #02000A;
+                padding-top: 20px;
+            }
+            .latest-pic-box {
+                margin-top: 15px;
+                img {
+                    max-width: 62px;
+                    height: auto;
+                    padding: 2px;
+                    &:first-child {
+                        max-width: 127px;
+                        float: left;
+                    }
+                    &:nth-child(7) {
+                        max-width: 127px;
+                        width: 100%;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

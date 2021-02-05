@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "bootstrap-colorpicker": "^3.2.0",
+        "create-scss": "^2.6.1",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.5.1",
+        "node-sass": "^5.0.0",
+        "popper.js": "^1.16.1"
+    },
+    "scripts": {
+        "scss": "node-sass --watch scss -o css",
+        "cs-watch": "sass scss/main.scss css/style.css --watch --no-source-map",
+        "cs-compile": "sass scss/main.scss css/style.css --no-source-map",
+        "cs-compress": "sass scss/main.scss css/style.css --style=compressed --no-source-map",
+        "cs-prefix": "postcss css/style.css -o css/style.css --use autoprefixer -b 'last 4 versions' --no-source-map",
+        "cs-build": "npm-run-all cs-compile cs-compress cs-prefix"
+    },
+    "devDependencies": {
+        "webpack": "^5.19.0"
+    }
+}

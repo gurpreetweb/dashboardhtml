@@ -1,0 +1,62 @@
+//============
+// Page - integration layout
+//============
+.integration-layout-wrapepr {
+    background: $whitecolor;
+    padding: 50px 50px 90px 50px;
+    border-radius: 10px;
+    .integration-paragraph {
+        p {
+            color: #606B86;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+    .integration-box-layout {
+        margin-top: 60px;
+        .row {
+            justify-content: center;
+        }
+        .intbox {
+            .card {
+                background: #F8F8F8;
+                border-radius: 10px;
+                border: none;
+                text-align: center;
+                padding: 50px 10px 30px;
+                .card-img-top {
+                    max-width: 120px;
+                    height: auto;
+                    margin: auto;
+                }
+                .card-title {
+                    color: #02000A;
+                    font-size: 22px;
+                    margin-bottom: 30px;
+                }
+            }
+            &.dropbox {
+                .btn {
+                    background: #5B33F1;
+                    border: none;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #EDE83A;
+                    padding: 10px 25px;
+                }
+            }
+            &.googledrive {
+                .btn {
+                    background: #EC3C7F;
+                    border: none;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #EDE83A;
+                    padding: 10px 25px;
+                }
+            }
+        }
+    }
+}
